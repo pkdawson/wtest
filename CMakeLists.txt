@@ -5,7 +5,7 @@ set(wtest_VERSION_MAJOR 0)
 set(wtest_VERSION_MINOR 1)
 set(wtest_VERSION_PATCH 0)
 
-include_directories(deps/include)
+include_directories(opt/include)
 
 add_executable(wtest main.cpp)
 add_executable(wtest_suite test.cpp)

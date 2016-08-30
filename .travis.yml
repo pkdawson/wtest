@@ -14,7 +14,6 @@ before_install:
   - $CXX -v
 
 script:
-  - scons -C deps
-  - mkdir build
-  - cd build
+  - scons -C deps ..
+  - mkdir build && cd build
   - cmake .. && make && ./wtest_suite --durations yes --warn NoAssertions
