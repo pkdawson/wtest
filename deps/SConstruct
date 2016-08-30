@@ -1,0 +1,8 @@
+import os
+
+env = Environment(ENV = os.environ)
+
+if not os.path.exists("Catch"):
+    env.Execute("git clone https://github.com/philsquared/Catch")
+
+env.Command("include/catch.hpp", "Catch/single_include/catch.hpp", Copy("$TARGET", "$SOURCE"))

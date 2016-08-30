@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+build
+
+deps/*.dblite
+deps/Catch
+deps/include

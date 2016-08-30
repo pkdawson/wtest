@@ -6,6 +6,7 @@ os:
   - linux
   - osx
 script:
+  - scons -C deps
   - mkdir build
   - cd build
   - cmake .. && make && ./wtest_suite
