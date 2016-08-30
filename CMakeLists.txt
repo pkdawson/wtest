@@ -9,3 +9,8 @@ include_directories(deps/include)
 
 add_executable(wtest main.cpp)
 add_executable(wtest_suite test.cpp)
+
+set_property(TARGET wtest PROPERTY CXX_STANDARD 14)
+set_property(TARGET wtest_suite PROPERTY CXX_STANDARD 14)
+set_property(TARGET wtest PROPERTY CXX_STANDARD_REQUIRED ON)
+set_property(TARGET wtest_suite PROPERTY CXX_STANDARD_REQUIRED ON)
